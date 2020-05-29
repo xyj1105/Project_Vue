@@ -37,7 +37,7 @@ export default {
         password: this.loginForm.password
       }).then(successResponse => {
         if (successResponse.data.code === 200) {
-          // alert(successResponse.data.msg)
+          alert(successResponse.data.msg)
           this.$router.replace({path: '/index'})
         } else {
           alert(successResponse.data.msg)
